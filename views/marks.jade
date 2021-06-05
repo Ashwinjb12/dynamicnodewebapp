@@ -1,0 +1,30 @@
+doctype html
+html
+head
+    style
+        include ./../main.css
+title=title
+body
+    h1 Students marks from Database     
+
+    ul
+        each item in marklist
+            li=item.student_name 
+            li=item.maths 
+            li=item.eem 
+            li=item.english
+
+table
+    thead
+      tr
+        th student name 
+        th maths 
+        th eem 
+        th english
+    tbody
+       each item in marklist
+        tr
+          td=item.student_name 
+          td=item.maths 
+          td=item.eem 
+          td=item.english
